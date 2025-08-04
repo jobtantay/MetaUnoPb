@@ -1,0 +1,97 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap');
+
+*{
+  font-family: "Mozilla Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(109, 20, 20);
+}
+
+
+.wrapper{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-button button {
+    color: rgb(128, 128, 128);
+    background-color: white;
+    border: 1px solid white;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: -o-linear-gradient(rgba(39,39,39,1),transparent);
+    z-index: 100;
+}
+
+.nav-logo p{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.nav-menu ul{
+    display: flex;
+}
+
+.nav-menu ul li{
+    list-style-type: none;
+}
+
+.nav-menu ul li .Dashboard{
+    text-decoration: none;
+    font-weight: 500;
+    color: grey;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+
+.Dashboard:hover, .active{
+    border-bottom: 2px solid yellow;
+    color: yellow;
+}
+
+.nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background-color: rgba(255, 255, 0, 0.603);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: rgba(3, 3, 3, 0.959);
+}
+
+.btn:hover{
+    background: rgba(216, 196, 17, 0.644);
+    color: white;
+}
+
+
+#registerBtn{
+    margin-left: 15px;
+}
+
+.btn.white-btn{
+    background: yellow;
+}
+
+.btn.btn.white-btn:hover{
+    background:rgba(216, 196, 17, 0.644);
+}
+
+.nav-menu-btn{
+    display: none;
+}
+

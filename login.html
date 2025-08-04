@@ -1,22 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
         <title>Personal Best Records</title>
         <link rel="stylesheet" href="style.css">
-    </head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Mozilla+Text&display=swap" rel="stylesheet">
+</head>
 
-    <body>
-        <div class="nav-menu">
-            <ul>
-                <li><a href="#" class="Dashboard">Dashboard</a></li>
-            </ul>
+<body>
+<div class="wrapper">
+            <nav class="nav">
+                    <div class="nav-logo">
+                        <p>LOGO .</p>
+                    </div>
+                    <div class="nav-menu">
+                        <ul>
+                            <li><a href="#" class="Dashboard active">Milestone Tracker</a></li>
+                        </ul>
+                    </div>
+                <div class="nav-button">
+                    <button class="btn white-btn" id="loginBtn">Sign In</button>
+                    <button class="btn" id="registerBtn">Sign Up</button>
+                </div>
+                <div class="nav-menu-btn">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </nav>
+
+<!---------------------------------FORM BOX----------------------->
+        <div class="form-box">
+            <!---------------------------------REGISTRATION FORM------------------>
+            <div class="register-container" id="register">
+                <div class="top">
+                    <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+                    <header>Sign Up</header>
+                </div>  
+                <div class="two-form">
+                    <div class="input-field">
+                        <input type="text" class="input-field" placeholder="FirstName">
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" class="input-field" placeholder="LastName">
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" class="input-field" placeholder="Email">
+                        <i class="bx bx-envelope"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" class="input-field" placeholder="Password">
+                        <i class="bx bx-lock"></i>
+                    </div>
+                </div> 
+            </div>
         </div>
-        <div class="nav-button">
-            <button class="btn" id="loginBtn">Sign In</button>
-            <button class="btn" id="registerBtn">Sign Up</button>
-        </div>
-        <div class="nav menu btn">
-            
-        </div>
-    </body>
+</div>
+</body>
 </html>
