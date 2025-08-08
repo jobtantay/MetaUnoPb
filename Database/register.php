@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($stmt->execute()) {
         // After register, go back to login view
-        echo "<script>alert('Registration successful!'); window.location.href='index.php?login';</script>";
+        echo "<script>alert('Registration successful!'); window.location.href='../Pages/landing.php?login';</script>";
     } else {
         echo "<script>alert('Error: " . $stmt->error . "'); window.history.back();</script>";
     }

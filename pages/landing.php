@@ -20,7 +20,7 @@
 
         <div class="nav-menu" id="navMenu">
             <ul>
-                <li><a href="#" class="Dashboard active">Milestone Tracker</a></li>
+                <li><a href="dashboard.php" class="Dashboard active">Milestone Tracker</a></li>
             </ul>
         </div>
 
@@ -78,7 +78,7 @@
                 <header>Sign Up</header>
             </div>
 
-            <form action="register.php" method="POST">
+            <form action="../Database/register.php" method="POST">
                 <div class="two-forms">
                     <div class="input-box">
                         <input type="text" name="fname" class="input-field" placeholder="Firstname" required>
@@ -103,7 +103,7 @@
 
                 <div class="two-col">
                     <div class="one">
-                        <input type="checkbox" id="register-check">
+                        <input type="checkbox" id="registesr-check">
                         <label for="register-check"> Remember Me</label>
                     </div>
                 </div>
@@ -115,8 +115,10 @@
         </div>
 
     </div>
+
+    
 </div>
 
-<script src="script.js"></script>
+<script src="/MetaUnoPb/pages/script.js"></script>
 </body>
 </html>
