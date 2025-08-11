@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,38 +42,42 @@
     <div class="form-box">
 
         <!-- Login Form -->
-        <div class="login-container" id="login">
-            <div class="top">
-                <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
-                <header>Login</header>
-            </div>
+<div class="login-container" id="login">
+    <div class="top">
+        <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+        <header>Login</header>
+    </div>
 
-            <form action="login.php" method="POST">
-                <div class="input-box">
-                    <input type="text" name="email" class="input-field" placeholder="Email" required>
-                    <i class="bx bx-user"></i>
-                </div>
-
-                <div class="input-box">
-                    <input type="password" name="password" class="input-field" placeholder="Password" required>
-                    <i class="bx bx-lock-alt"></i>
-                </div>
-
-                <div class="input-box">
-                    <input type="submit" class="submit" value="Sign In">
-                </div>
-
-                <div class="two-col">
-                    <div class="one">
-                        <input type="checkbox" id="login-check">
-                        <label for="login-check"> Remember Me</label>
-                    </div>
-                    <div class="two">
-                        <label><a href="#">Forgot password?</a></label>
-                    </div>
-                </div>
-            </form>
+    <form action="../database/login.php" method="POST">
+        <!-- Email -->
+        <div class="input-box">
+            <input type="email" name="email" class="input-field" placeholder="Email" required>
+            <i class="bx bx-user"></i>
         </div>
+
+        <!-- Password -->
+        <div class="input-box">
+            <input type="password" name="password" class="input-field" placeholder="Password" required>
+            <i class="bx bx-lock-alt"></i>
+        </div>
+
+        <!-- Submit -->
+        <div class="input-box">
+            <input type="submit" class="submit" value="Sign In">
+        </div>
+
+        <!-- Options -->
+        <div class="two-col">
+            <div class="one">
+                <input type="checkbox" id="login-check" name="remember">
+                <label for="login-check"> Remember Me</label>
+            </div>
+            <div class="two">
+                <label><a href="#">Forgot password?</a></label>
+            </div>
+        </div>
+    </form>
+</div>
 
         <!-- Registration Form -->
         <div class="register-container" id="register">

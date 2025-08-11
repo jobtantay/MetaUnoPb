@@ -302,16 +302,14 @@ header{
     margin-top: -80px;
 }
 
-/* Hide register form by default */
 .register-container {
   opacity: 0;
   position: absolute;
-  right: -520px; /* off screen */
+  right: -520px; 
   pointer-events: none;
   transition: all 0.5s ease;
 }
 
-/* Show login form by default */
 .login-container {
   opacity: 1;
   position: absolute;
